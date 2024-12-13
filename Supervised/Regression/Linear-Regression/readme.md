@@ -1,5 +1,7 @@
 # Linear Regression: A Quick Overview
 
+Before you dive into the implementations, I highly recommend first learning the heart of each algorithm—its core idea and how it works. You can explore this through YouTube tutorials, books, or online courses. This repository is meant to complement that knowledge by showing how to translate concepts into working code.
+
 Linear regression is a regression algorithm used to predict continuous values. It's one of the simplest and most interpretable models in machine learning, making it a great starting point for understanding regression concepts.
 
 ## Key Idea
