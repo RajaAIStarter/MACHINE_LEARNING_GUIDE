@@ -28,8 +28,9 @@ Linear regression is a fundamental algorithm used to predict continuous values b
   \text{Objective: } \text{Minimize } \text{RSS} + \lambda \sum_{i=1}^{n} |\beta_i|
   \]
 
-  - \( \lambda \) is the regularization parameter.
-  - \( \beta_i \) is the absolute value of the coefficients.
+λ (alpha in scikit-learn) is the regularization parameter.
+
+βiβi​ are the model coefficients.
 
 - **Effect**: Shrinks some coefficients to exactly zero, effectively eliminating less important features.
 - **Key Point**: Lasso is useful for feature selection in addition to regularization.
