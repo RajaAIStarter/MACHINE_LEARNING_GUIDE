@@ -14,6 +14,8 @@ Ridge Regression:
 
 Objective: Minimize RSS with an additional penalty term:
 
+\text{Objective: } \text{Minimize } \text{RSS} + \lambda \sum_{i=1}^{n} \beta_i^2
+
 where:
 
  (alpha in scikit-learn) is the regularization parameter.
@@ -28,6 +30,8 @@ Lasso Regression:
 
 Objective: Minimize RSS with an additional penalty term:
 
+\text{Objective: } \text{Minimize } \text{RSS} + \lambda \sum_{i=1}^{n} |\beta_i|
+
 where:
 
  is the regularization parameter.
@@ -38,9 +42,53 @@ Effect: Shrinks some coefficients to exactly zero, effectively eliminating less 
 
 Key Point: Lasso is useful for feature selection in addition to regularization.
 
+Comparing Ridge, Lasso, and Linear Regression:
 
+Feature
 
+Linear Regression
 
+Ridge Regression
+
+Lasso Regression
+
+Overfitting
+
+High
+
+Reduced
+
+Reduced
+
+Feature Selection
+
+No
+
+No
+
+Yes
+
+Penalty
+
+None
+
+ (L2 Norm)
+
+(
+
+\beta
+
+) (L1 Norm)
+
+Coefficients
+
+Large
+
+Shrinks, no elimination
+
+Shrinks, can eliminate
+
+Code Explanation
 
 Dataset and Libraries:
 
